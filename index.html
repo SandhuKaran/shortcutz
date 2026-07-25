@@ -24,7 +24,10 @@
       property="og:description"
       content="Skin fades, tapers, beard sculpting and hot towel finishes. Book your chair."
     />
-    <meta property="og:image" content="/assets/og.jpg" />
+    <!-- Social scrapers do not resolve relative URLs, and Vite does not
+         rewrite meta content, so this one stays fully qualified by hand. -->
+    <meta property="og:image" content="https://sandhukaran.github.io/shortcutz/assets/og.jpg" />
+    <meta property="og:url" content="https://sandhukaran.github.io/shortcutz/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

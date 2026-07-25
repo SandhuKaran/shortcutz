@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { nav, shop } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 import { Arrow, Button } from './ui.jsx'
 
 export default function Nav() {
@@ -45,7 +46,7 @@ export default function Nav() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-12">
           <a href="#top" className="relative z-10 flex items-center" aria-label={`${shop.name} home`}>
             <img
-              src="/assets/logo-light.png"
+              src={asset('/assets/logo-light.png')}
               alt={shop.name}
               width={357}
               height={247}

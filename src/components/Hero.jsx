@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { shop, stats } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 import { Arrow, Button } from './ui.jsx'
 
 const EASE = [0.16, 1, 0.3, 1]
@@ -28,7 +29,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           {/* <motion.div variants={rise} initial="hidden" animate="show" custom={0}>
             <img
-              src="/assets/logo-light.png"
+              src={asset('/assets/logo-light.png')}
               alt={`${shop.name} logo`}
               width={357}
               height={247}

@@ -17,6 +17,8 @@
    rather than the page breaking.
 ================================================================== */
 
+import { asset } from '../lib/asset.js'
+
 /* All three exports already land Y-up in three.js (measured in-browser:
    scissors 0.14×0.39×0.02, chair 720×1014×905, dryer 2.8×4.05×3.35 —
    longest axis is Y in every case), so no axis correction is needed.
@@ -24,7 +26,7 @@
    measured size, so `axisFix` stays a measurement, never a guess. */
 export const models = {
   scissors: {
-    url: '/assets/3d/scissors.glb',
+    url: asset('/assets/3d/scissors.glb'),
     axisFix: [0, 0, 0],
     rotation: [0, 0.2, -0.4],
     size: 3.2,
@@ -41,7 +43,7 @@ export const models = {
     mobile: { position: [0.9, 2.3, -4.4], size: 2.4 },
   },
   chair: {
-    url: '/assets/3d/chair.glb',
+    url: asset('/assets/3d/chair.glb'),
     axisFix: [0, 0, 0],
     rotation: [0, -0.55, 0],
     size: 3.6,
@@ -51,7 +53,7 @@ export const models = {
     mobile: { size: 3.0 },
   },
   dryer: {
-    url: '/assets/3d/hairdryer.glb',
+    url: asset('/assets/3d/hairdryer.glb'),
     axisFix: [0, 0, 0],
     rotation: [0.15, 0.85, -0.3],
     size: 2.6,

@@ -4,6 +4,8 @@
    Items marked TODO are placeholders for you to fill in.
 ------------------------------------------------------------------- */
 
+import { asset } from '../lib/asset.js'
+
 export const shop = {
   name: 'SHORTCUTZ',
   tagline: 'Precision barbering',
@@ -77,7 +79,7 @@ export const team = [
     name: 'Shivank',
     role: 'Founder / Master Barber',
     // TODO: drop your headshot at public/assets/team/shivank.png
-    image: '/assets/team/shivank.png',
+    image: asset('/assets/team/shivank.png'),
     years: '10',
     specialties: ['Skin fades', 'Textured crops', 'Beard design'],
     bio: 'Ten years behind the chair and still measures every fade twice. Shivank built SHORTCUTZ around one rule: nobody leaves the chair unsure.',
@@ -87,7 +89,7 @@ export const team = [
     name: 'Ninder',
     role: 'Senior Barber',
     // TODO: drop your headshot at public/assets/team/ninder.png
-    image: '/assets/team/ninder.png',
+    image: asset('/assets/team/ninder.png'),
     years: '7',
     specialties: ['Scissor work', 'Classic tapers', 'Straight razor'],
     bio: 'Trained on classic scissor-over-comb and never let it go. Ninder is the one you book when you want the shape to grow out as clean as it went in.',
@@ -99,12 +101,12 @@ export const team = [
    TODO: drop files at public/assets/cuts/ using these filenames, or
    rename these entries to match whatever you've got. */
 export const gallery = [
-  { src: '/assets/cuts/cut-01.png', label: 'Mid skin fade', tag: 'FADE' },
-  { src: '/assets/cuts/cut-02.png', label: 'Textured crop', tag: 'CROP' },
-  { src: '/assets/cuts/cut-03.png', label: 'Classic taper', tag: 'TAPER' },
-  { src: '/assets/cuts/cut-04.png', label: 'Burst fade', tag: 'BURST' },
-  { src: '/assets/cuts/cut-05.png', label: 'Beard sculpt', tag: 'BEARD' },
-  { src: '/assets/cuts/cut-06.png', label: 'Line-up', tag: 'LINE' },
+  { src: asset('/assets/cuts/cut-01.png'), label: 'Mid skin fade', tag: 'FADE' },
+  { src: asset('/assets/cuts/cut-02.png'), label: 'Textured crop', tag: 'CROP' },
+  { src: asset('/assets/cuts/cut-03.png'), label: 'Classic taper', tag: 'TAPER' },
+  { src: asset('/assets/cuts/cut-04.png'), label: 'Burst fade', tag: 'BURST' },
+  { src: asset('/assets/cuts/cut-05.png'), label: 'Beard sculpt', tag: 'BEARD' },
+  { src: asset('/assets/cuts/cut-06.png'), label: 'Line-up', tag: 'LINE' },
 ]
 
 export const hours = [

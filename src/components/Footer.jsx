@@ -1,4 +1,5 @@
 import { nav, shop } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 import { Arrow, Button } from './ui.jsx'
 
 export default function Footer() {
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className="grid gap-12 pt-14 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="/assets/logo-light.png"
+              src={asset('/assets/logo-light.png')}
               alt={shop.name}
               width={357}
               height={247}
